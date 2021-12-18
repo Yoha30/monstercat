@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    img {
+        margin-bottom: 1rem;
+    }
+    .icon-black img{
+        filter: brightness(0);
+    }
+
+}
