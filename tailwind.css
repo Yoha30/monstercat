@@ -8,5 +8,8 @@
     .icon-black img{
         filter: brightness(0);
     }
+    #vertical{
+        writing-mode: vertical-lr;
+    }
 
 }

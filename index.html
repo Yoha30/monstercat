@@ -4,37 +4,18 @@
     <meta charset="UTF-8">
     <title>Monstercat</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.monstercat.com/monstercat-logo.webp">
 </head>
-<body>
-<header class=" z-1  bg-no-repeat bg-cover absolute w-full  object-cover">
-    <div class="bg-main z-1 h-full bg-cover absolute brightness-25 w-full bg-no-repeat"></div>
+<body class="bg-black text-white">
+<header class=" z-1  bg-no-repeat bg-cover absolute w-full  bg-black h-screen object-cover">
+    <div class="bg-main z-1 h-full bg-cover absolute brightness-25 w-full h-screen  blur-md bg-no-repeat"></div>
 
-    <div class="flex z-10 flex-row justify-between place-items-start p-8 backdrop-blur-md">
-       <a href="#"> <img src="https://cdn.monstercat.com/monstercat-logo.webp" alt="Logo" class=" w-12 h-12 "></a>
-        <div class="w-87 flex place-items-center mt-36 ">
-        <img src="images/500x500.jpg" class="w-43 relative">
-                       <p class="-rotate-90 text-white text-lg absolute italic -left-1 bottom-42"><span class="text-light-green">instinct</span> — Released May 22, 2020</p>
-
-            <div class="flex flex-col text-white ml-10">
-                <p class="uppercase text-3xl">level days</p>
-                <p class="text-2xl uppercase mt-2">conro</p>
-                <div class="flex">
-                    <img src="images/256.webp" class="rounded-full w-24 h-24 object-cover mr-8 my-10 cursor-pointer">
-                    <img src="images/256 (1).webp" class="rounded-full w-24 h-24 object-cover my-10 cursor-pointer">
-                </div>
-                <div class="flex">
-                    <button id="listen-now" class="text-white flex place-items-center uppercase font-semibold bg-green italic  px-10 py-3 mr-5 hover:icon-black hover:text-black hover:bg-white duration-300">
-                        <img  src="images/play-button.png" class="w-3 h-3 mb-0 mr-2">
-                        listen now</button>
-                    <button id="share" class="text-white italic flex place-items-center uppercase font-bold hover:icon-black border-white border px-8 py-2 hover:bg-white hover:text-black duration-300">
-                        <img src="images/share.png" class="w-3 h-3 mb-0 mr-2">
-                        share</button>
-                </div>
-            </div>
+    <div class="flex z-10 flex-row justify-between place-items-start py-6 px-16 sticky top-1">
+        <a href="#"> <img src="https://cdn.monstercat.com/monstercat-logo.webp" alt="Logo" class=" w-13 h-13 "></a>
+        <div class="flex place-items-center">
+            <img src="images/icon-hamburger.svg" alt="Menu" class="w-5 h-4 mt-3 cursor-pointer">
         </div>
-        <div class="flex flex-col place-items-center">
-            <img src="images/icon-hamburger.svg" alt="Menu" class="w-6 h-5 cursor-pointer">
-            <div class="mt-10">
+        <div class="mt-14 ml-2 absolute right-15">
             <a href="#"> <img src="images/instagram.png" alt="Instagram" class="w-4 h-4 "> </a>
             <a href="#"> <img src="images/tik-tok.png" alt="Tiktok" class="w-4  h-4"></a>
             <a href="#"> <img src="images/twitter.png" alt="Twitter" class="w-4 h-4"> </a>
@@ -42,8 +23,8 @@
             <a href="#"> <img src="images/facebook.png" alt="Facebook" class="w-4   h-4"></a>
             <a href="#"> <img src="images/discord.png" alt="Discord" class="w-4 h-4"></a>
             <a href="#">
-            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="834 153 612.7 487">
-<path fill="#f1f1f1" d="M1446.4,445.6c-0.8-24.3-4.5-47.1-19.5-63c-14.1-15-34.3-22.6-57-21.6c-2.3,0.1-3.8,0.1-5.2-1.1
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="834 153 612.7 487">
+                    <path fill="#f1f1f1" d="M1446.4,445.6c-0.8-24.3-4.5-47.1-19.5-63c-14.1-15-34.3-22.6-57-21.6c-2.3,0.1-3.8,0.1-5.2-1.1
                             c-3.6-62.8-16.1-147.6-32.4-187.1c-5.1-16.5-26.1-26.1-40.3-14.9c-25.8,14.9-57.2,38.6-83.1,61.9c-18.1-4.5-37.5-7.2-58.1-8
                             c-0.8,0-1.6-0.1-2.4-0.1l-5.9-0.1v-0.1l-2.3,0.1l-2.3-0.1v0.1l-5.9,0.1c-0.8,0-1.6,0-2.4,0.1c-20.6,0.7-40,3.4-58.1,8
                             c-25.9-23.3-57.4-47-83.1-61.9c-14.2-11.2-35.2-1.6-40.3,14.9C932,212.3,919.5,297,915.8,359.8c-1.4,1.2-2.9,1.2-5.1,1.1
@@ -53,16 +34,177 @@
                             c34.2-25.6,76.6-39.8,119.3-40h6.7h6.7c42.8,0.1,85.2,14.4,119.3,40c34.3,25.7,58.4,58.7,71.5,98.2c9.5,28.6,11.8,57.2,6.8,86.5
                             c-0.4,2.5-0.9,4.9-1.4,7.4c-1.7,8.1-4,16.2-6.8,24.4c-2.8,8.2-6.2,16.5-10.2,24.9c-3,6.4,1.7,13.8,8.8,13.8c5.4,0,10.6,0.1,15.6,0.2
                             c4.8,0.1,9.4,0.2,14,0.2c5.9,0,11.7-0.1,17.5-0.7c33-2.9,57-29.7,61.8-63.1C1446.9,466.1,1446.9,460.7,1446.4,445.6z"></path>
-<g>
-<path fill="#f1f1f1" d="M1140.4,277.9c-100,0-181.1,81.1-181.1,181.1c0,100,81.1,181.1,181.1,181.1c100,0,181.1-81.1,181.1-181.1
+                    <g>
+                        <path fill="#f1f1f1" d="M1140.4,277.9c-100,0-181.1,81.1-181.1,181.1c0,100,81.1,181.1,181.1,181.1c100,0,181.1-81.1,181.1-181.1
                                 C1321.5,359,1240.4,277.9,1140.4,277.9z M1188.6,476.5c-23.1,13.7-45.9,27.7-69.7,40c-5.8,3.1-16.5,3.3-21.5-0.2
                                 c-4-2.8-5.8-14.6-3.2-19.8c12.2-25.3,10.6-49.3-0.9-74.3c-6-13,1.3-23.2,16.6-23.3c1.4,0.5,5.3,1.5,8.7,3.4
                                 c23.5,13.7,46.9,27.5,70.2,41.6C1205.4,453.9,1205.2,466.6,1188.6,476.5z"></path>
-</g>
-</svg></a>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+    <div class="ml-48">
+        <div class="w-full mt-16 flex place-items-center relative  ">
+            <img src="images/500x500.jpg" class="w-2/5 ">
+            <p id="vertical" class=" rotate-180 text-white text-xl absolute italic -left-8 bottom-4"><span
+                    class="text-light-green">instinct</span> — Released May 22, 2020</p>
+
+            <div class="flex flex-col text-white ml-10">
+                <p class="uppercase text-3xl">level days</p>
+                <p class="text-2xl uppercase mt-2">conro</p>
+                <div class="flex">
+                    <img src="images/256.webp" class="rounded-full w-24 h-24 object-cover mr-8 my-14 cursor-pointer">
+                    <img src="images/256 (1).webp" class="rounded-full w-24 h-24 object-cover my-14 cursor-pointer">
                 </div>
+                <div class="flex">
+                    <button id="listen-now"
+                            class="text-white flex place-items-center uppercase font-semibold bg-green italic  px-10 py-3 mr-5 hover:icon-black hover:text-black hover:bg-white duration-300">
+                        <img src="images/play-button.png" class="w-3 h-3 mb-0 mr-2">
+                        listen now
+                    </button>
+                    <button id="share"
+                            class="text-white italic flex place-items-center uppercase font-bold hover:icon-black border-white border px-8 py-2 hover:bg-white hover:text-black duration-300">
+                        <img src="images/share.png" class="w-3 h-3 mb-0 mr-2">
+                        share
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mt-20">
+            <p class="text-7xl text-white uppercase font-medium">stream it your way</p>
+        </div>
+        <div class="mt-10">
+            <table class="text-white ">
+                <tr>
+                    <td class=" p-6 pt-7 border">
+                        <svg class="cursor-pointer" style="top: 3px" width="100"
+                             viewBox="834 153 2279 487" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="white" d="M1446.4,445.6c-0.8-24.3-4.5-47.1-19.5-63c-14.1-15-34.3-22.6-57-21.6c-2.3,0.1-3.8,0.1-5.2-1.1
+	c-3.6-62.8-16.1-147.6-32.4-187.1c-5.1-16.5-26.1-26.1-40.3-14.9c-25.8,14.9-57.2,38.6-83.1,61.9c-18.1-4.5-37.5-7.2-58.1-8
+	c-0.8,0-1.6-0.1-2.4-0.1l-5.9-0.1v-0.1l-2.3,0.1l-2.3-0.1v0.1l-5.9,0.1c-0.8,0-1.6,0-2.4,0.1c-20.6,0.7-40,3.4-58.1,8
+	c-25.9-23.3-57.4-47-83.1-61.9c-14.2-11.2-35.2-1.6-40.3,14.9C932,212.3,919.5,297,915.8,359.8c-1.4,1.2-2.9,1.2-5.1,1.1
+	c-22.7-1-42.9,6.7-57,21.6c-14.9,15.8-18.7,38.7-19.5,63c-0.5,15.2-0.5,20.5,2.4,41c4.7,33.4,28.7,60.2,61.8,63.1
+	c5.8,0.5,11.6,0.7,17.5,0.7c4.6,0,9.3-0.1,14-0.2c5-0.1,10.2-0.2,15.6-0.2c7.2,0,11.8-7.4,8.8-13.8c-4.5-9.5-8.2-18.9-11.3-28.2
+	c-2.7-8.3-4.9-16.6-6.4-24.7c-0.2-0.9-0.3-1.8-0.5-2.7c-5.2-29.6-3-58.5,6.6-87.4c13.1-39.4,37.2-72.4,71.5-98.2
+	c34.2-25.6,76.6-39.8,119.3-40h6.7h6.7c42.8,0.1,85.2,14.4,119.3,40c34.3,25.7,58.4,58.7,71.5,98.2c9.5,28.6,11.8,57.2,6.8,86.5
+	c-0.4,2.5-0.9,4.9-1.4,7.4c-1.7,8.1-4,16.2-6.8,24.4c-2.8,8.2-6.2,16.5-10.2,24.9c-3,6.4,1.7,13.8,8.8,13.8c5.4,0,10.6,0.1,15.6,0.2
+	c4.8,0.1,9.4,0.2,14,0.2c5.9,0,11.7-0.1,17.5-0.7c33-2.9,57-29.7,61.8-63.1C1446.9,466.1,1446.9,460.7,1446.4,445.6z"></path>
+                            <g>
+                                <path fill="white" d="M1140.4,277.9c-100,0-181.1,81.1-181.1,181.1c0,100,81.1,181.1,181.1,181.1c100,0,181.1-81.1,181.1-181.1
+		C1321.5,359,1240.4,277.9,1140.4,277.9z M1188.6,476.5c-23.1,13.7-45.9,27.7-69.7,40c-5.8,3.1-16.5,3.3-21.5-0.2
+		c-4-2.8-5.8-14.6-3.2-19.8c12.2-25.3,10.6-49.3-0.9-74.3c-6-13,1.3-23.2,16.6-23.3c1.4,0.5,5.3,1.5,8.7,3.4
+		c23.5,13.7,46.9,27.5,70.2,41.6C1205.4,453.9,1205.2,466.6,1188.6,476.5z"></path>
+                            </g>
+                            <path fill="white" d="M1746,290.2c19.2,0,35.8,3.2,50,9.7c14.1,6.3,25,15.3,32.7,27.2c7.7,11.7,11.5,25.5,11.5,41.5c0,15.9-3.8,29.8-11.5,41.5
+	c-7.7,11.7-18.6,20.8-32.7,27.2c-14.1,6.3-30.8,9.4-50,9.4h-27c-5.5,0-9.9,4.4-9.9,9.9v35.6c0,5.5-4.4,9.9-9.9,9.9H1659
+	c-5.5,0-9.9-4.4-9.9-9.9V300.1c0-5.5,4.4-9.9,9.9-9.9H1746z M1742.4,399.5c12.3,0,21.6-2.6,27.9-7.9c6.3-5.5,9.4-13.1,9.4-23
+	c0-9.9-3.1-17.6-9.4-23c-6.3-5.5-15.5-8.2-27.9-8.2h-23.4c-5.5,0-9.9,4.4-9.9,9.9v42.3c0,5.5,4.4,9.9,9.9,9.9H1742.4z"></path>
+                            <path fill="white" d="M1914.8,300.1c0-5.5,4.4-9.9,9.9-9.9h40.2c5.5,0,9.9,4.4,9.9,9.9v144.6c0,5.5,4.4,9.9,9.9,9.9h81.4c5.5,0,9.9,4.4,9.9,9.9
+	v27.7c0,5.5-4.4,9.9-9.9,9.9h-141.3c-5.5,0-9.9-4.4-9.9-9.9V300.1z"></path>
+                            <path fill="white" d="M2292,467.1c-1.5-3.7-5.1-6.2-9.2-6.2h-76.3c-4,0-7.7,2.4-9.2,6.2l-11.6,28.8c-1.5,3.7-5.1,6.2-9.2,6.2h-39.3
+	c-7.2,0-11.9-7.4-9.1-13.9l84.8-192.1c1.6-3.6,5.1-5.9,9.1-5.9h46.2c3.9,0,7.5,2.3,9.1,5.9l85.1,192.1c2.9,6.5-1.9,13.9-9.1,13.9
+	h-40.5c-4,0-7.7-2.4-9.2-6.2L2292,467.1z M2257.3,416.8c7,0,11.8-7.1,9.2-13.6l-12.6-31.4c-3.3-8.3-15.1-8.3-18.4,0l-12.6,31.4
+	c-2.6,6.5,2.2,13.6,9.2,13.6H2257.3z"></path>
+                            <path fill="white" d="M2532.6,423.8c-0.9,1.5-1.4,3.3-1.4,5.1v63.4c0,5.5-4.4,9.9-9.9,9.9h-40.2c-5.5,0-9.9-4.4-9.9-9.9V428
+	c0-1.8-0.5-3.6-1.4-5.1l-70.5-117.7c-3.9-6.6,0.8-15,8.5-15h40.2c3.5,0,6.7,1.8,8.5,4.8l38.9,65.1c3.8,6.4,13.2,6.4,17,0l38.9-65.1
+	c1.8-3,5-4.8,8.5-4.8h35.1c7.7,0,12.4,8.4,8.5,15L2532.6,423.8z"></path>
+                            <path fill="white" d="M2832.5,455.8c5.5,0,9.9,4.4,9.9,9.9v26.5c0,5.5-4.4,9.9-9.9,9.9h-150.4c-5.5,0-9.9-4.4-9.9-9.9V300.1
+	c0-5.5,4.4-9.9,9.9-9.9h146.5c5.5,0,9.9,4.4,9.9,9.9v26.5c0,5.5-4.4,9.9-9.9,9.9h-87.1c-5.5,0-9.9,4.4-9.9,9.9v15.9
+	c0,5.5,4.4,9.9,9.9,9.9h74.4c5.5,0,9.9,4.4,9.9,9.9v25c0,5.5-4.4,9.9-9.9,9.9h-74.4c-5.5,0-9.9,4.4-9.9,9.9v18.9
+	c0,5.5,4.4,9.9,9.9,9.9H2832.5z"></path>
+                            <path fill="white" d="M3016.7,450.1c-1.8-2.7-4.9-4.3-8.2-4.3h-17.6c-5.5,0-9.9,4.4-9.9,9.9v36.5c0,5.5-4.4,9.9-9.9,9.9H2931
+	c-5.5,0-9.9-4.4-9.9-9.9V300.1c0-5.5,4.4-9.9,9.9-9.9h87c19.2,0,35.8,3.2,50,9.7c14.1,6.3,25,15.3,32.7,27.2
+	c7.7,11.7,11.5,25.5,11.5,41.5c0,15.3-3.6,28.8-10.9,40.3c-5.2,8.3-12,15.3-20.6,21c-5.1,3.4-6.9,10.2-3.5,15.2l28.6,41.6
+	c4.5,6.6-0.2,15.5-8.2,15.5h-40.2c-3.3,0-6.3-1.6-8.2-4.3L3016.7,450.1z M3051.6,368.6c0-9.9-3.1-17.6-9.4-23
+	c-6.3-5.5-15.6-8.2-27.9-8.2h-23.4c-5.5,0-9.9,4.4-9.9,9.9v42.3c0,5.5,4.4,9.9,9.9,9.9h23.4c12.3,0,21.6-2.6,27.9-7.9
+	C3048.5,386.2,3051.6,378.5,3051.6,368.6z"></path>
+                        </svg>
+                    </td>
+                    <td class="p-6 pt-7 border">
+                        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" class="w-6 cursor-pointer h-6" viewBox="0 0 24 24"
+                             width="24px"
+                             height="24px">
+                            <path d="M 15.904297 1.078125 C 15.843359 1.06875 15.774219 1.0746094 15.699219 1.0996094 C 14.699219 1.2996094 13.600391 1.8996094 12.900391 2.5996094 C 12.300391 3.1996094 11.800781 4.1996094 11.800781 5.0996094 C 11.800781 5.2996094 11.999219 5.5 12.199219 5.5 C 13.299219 5.4 14.399609 4.7996094 15.099609 4.0996094 C 15.699609 3.2996094 16.199219 2.4 16.199219 1.5 C 16.199219 1.275 16.087109 1.10625 15.904297 1.078125 z M 16.199219 5.4003906 C 14.399219 5.4003906 13.600391 6.5 12.400391 6.5 C 11.100391 6.5 9.9003906 5.5 8.4003906 5.5 C 6.3003906 5.5 3.0996094 7.4996094 3.0996094 12.099609 C 2.9996094 16.299609 6.8 21 9 21 C 10.3 21 10.600391 20.199219 12.400391 20.199219 C 14.200391 20.199219 14.600391 21 15.900391 21 C 17.400391 21 18.500391 19.399609 19.400391 18.099609 C 19.800391 17.399609 20.100391 17.000391 20.400391 16.400391 C 20.600391 16.000391 20.4 15.600391 20 15.400391 C 17.4 14.100391 16.900781 9.9003906 19.800781 8.4003906 C 20.300781 8.1003906 20.4 7.4992188 20 7.1992188 C 18.9 6.1992187 17.299219 5.4003906 16.199219 5.4003906 z"/>
+                        </svg>
+                    </td>
+                    <td class="p-6 pt-7 border">
+                        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" class="w-6 cursor-pointer h-6" viewBox="0 0 30 30"
+                             width="30px"
+                             height="30px">
+                            <path d="M15,3C8.4,3,3,8.4,3,15s5.4,12,12,12s12-5.4,12-12S21.6,3,15,3z M19.731,21c-0.22,0-0.33-0.11-0.55-0.22 c-1.65-0.991-3.74-1.54-5.94-1.54c-1.21,0-2.53,0.22-3.63,0.44c-0.22,0-0.44,0.11-0.55,0.11c-0.44,0-0.77-0.33-0.77-0.77 s0.22-0.77,0.66-0.77c1.43-0.33,2.861-0.55,4.401-0.55c2.53,0,4.84,0.66,6.82,1.76c0.22,0.22,0.44,0.33,0.44,0.77 C20.39,20.78,20.06,21,19.731,21z M20.94,17.921c-0.22,0-0.44-0.11-0.66-0.22c-1.87-1.21-4.511-1.87-7.37-1.87 c-1.43,0-2.751,0.22-3.74,0.44c-0.22,0.11-0.33,0.11-0.55,0.11c-0.55,0-0.881-0.44-0.881-0.881c0-0.55,0.22-0.77,0.77-0.991 c1.32-0.33,2.641-0.66,4.511-0.66c3.08,0,5.94,0.77,8.361,2.2c0.33,0.22,0.55,0.55,0.55,0.881 C21.82,17.48,21.491,17.921,20.94,17.921z M22.37,14.4c-0.22,0-0.33-0.11-0.66-0.22c-2.2-1.21-5.39-1.98-8.47-1.98 c-1.54,0-3.19,0.22-4.621,0.55c-0.22,0-0.33,0.11-0.66,0.11c-0.66,0.111-1.1-0.44-1.1-1.099s0.33-0.991,0.77-1.1 C9.39,10.22,11.26,10,13.24,10c3.41,0,6.93,0.77,9.681,2.2c0.33,0.22,0.66,0.55,0.66,1.1C23.471,13.96,23.03,14.4,22.37,14.4z"/>
+                        </svg>
+                    </td>
+                    <td class="p-6 pt-7 border ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 cursor-pointer h-6" viewBox="0 0 48 48" width="48px"
+                             height="48px">
+                            <path fill="#fff"
+                                  d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"/>
+                            <path fill="#000" d="M20 31L20 17 32 24z"/>
+                        </svg>
+                    </td>
+                    <td class="p-6 pt-7 border">
+                        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" class="w-6 cursor-pointer h-6" viewBox="0 0 30 30"
+                             width="30px"
+                             height="30px">
+                            <path d="M15,3C8.373,3,3,8.373,3,15s5.373,12,12,12s12-5.373,12-12S21.627,3,15,3z M17.333,18.774H8.578l4.089-7.547h8.755L17.333,18.774z"
+                                  fill-rule="evenodd" clip-rule="evenodd"/>
+                        </svg>
+                    </td>
+                    <td class="p-6 pt-7 border w-4 h-4">
+                        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" class="w-6 cursor-pointer h-6" viewBox="0 0 50 50"
+                             width="50px"
+                             height="50px">
+                            <path d="M 30 11 C 26.398438 11 23 12.789063 21 15.6875 L 21 36 L 42.5 36 C 46.601563 36 50 32.601563 50 28.5 C 50 24.398438 46.601563 21 42.5 21 C 42 21 41.5 21.085938 41 21.1875 C 40.5 15.488281 35.800781 11 30 11 Z M 17 16 C 16.300781 16 15.601563 16.085938 15 16.1875 L 15 36 L 17 36 Z M 18 16 L 18 36 L 20 36 L 20 16.5 C 19.398438 16.300781 18.699219 16.101563 18 16 Z M 14 16.5 C 13.300781 16.800781 12.601563 17.101563 12 17.5 L 12 36 L 14 36 Z M 11 18.3125 C 10.199219 19.011719 9.5 19.90625 9 20.90625 L 9 36 L 11 36 Z M 6.5 22 C 6.324219 22.011719 6.148438 22.042969 6 22.09375 L 6 35.90625 C 6.300781 36.007813 6.699219 36 7 36 L 8 36 L 8 22.09375 C 7.699219 21.992188 7.300781 22 7 22 C 6.851563 22 6.675781 21.988281 6.5 22 Z M 5 22.3125 C 4.300781 22.511719 3.601563 22.8125 3 23.3125 L 3 34.6875 C 3.601563 35.085938 4.300781 35.488281 5 35.6875 Z M 2 24.09375 C 0.800781 25.394531 0 27.101563 0 29 C 0 30.898438 0.800781 32.605469 2 33.90625 Z"/>
+                        </svg>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="mt-20">
+            <p class="text-5xl font-bold">TRACK LIST</p>
+        </div>
+        <div id="play-list" class="mt-10 text-2xl">
+            <div class="flex flex-row justify-between place-items-center w-11/12">
+                <div class="flex place-items-center">
+                    <p>1</p>
+                   <button id="masgon-7zen" class="play-button"> <img src="images/play-button.png" class="w-5  h-5 mx-6 mb-0 cursor-pointer"></button>
+                    <img role="masgon-7zen" src="images/icons8-pause-24.png"
+                         class="w-5 hidden h-5 mx-6 pause-button mb-0 cursor-pointer">
+                    <div class="flex flex-col">
+                        <p class="text-xl">The Small Things</p>
+                        <p class="text-xl">Conro</p>
+                    </div>
+                </div>
+                <div class="flex place-items-center">
+                    <p class="text-xl">3:35</p>
+                    <img  src="images/share.png" class="w-5 h-5 mb-0 ml-20 cursor-pointer">
+                </div>
+            </div>
+            <div class="flex flex-row my-8 justify-between place-items-center w-11/12">
+                <div class="flex place-items-center">
+                    <p>1</p>
+                    <button id="tal2aty-rash2a" class="play-button"> <img src="images/play-button.png" class="w-5 h-5 mx-6 mb-0 cursor-pointer"></button>
+                    <img role="tal2aty-rash2a" src="images/icons8-pause-24.png"
+                         class="w-5 hidden h-5 mx-6 mb-0 pause-button cursor-pointer">
+                    <div class="flex flex-col">
+                        <p  class="text-xl">The Small Things</p>
+                        <p class="text-xl">Conro</p>
+                    </div>
+                </div>
+                <div class="flex place-items-center">
+                    <p id="audio-duration" class="text-xl">3:09</p>
+                    <img src="images/share.png" class="w-5 h-5 mb-0 ml-20 cursor-pointer">
+                </div>
+            </div>
+            <audio aria-labelledby="masgon-7zen" src="مهرجان%20_%20مسجون%20حزين%20مين%20سمعني%20_%20حمو%20الطيخا%20-%20توزيع%20امجد%20الجوكر%20انتاج%20دبور%20برودكشن.mp3"
+                   class="audio"></audio>
+            <audio aria-labelledby="tal2aty-rash2a" src="مهرجان%20طلقاتى%20راشقه%20(%20شرقان%20سعادة%20عطشان%20يا%20ساده%20)%20حمو%20الطيخا%20-%20توزيع%20ماندو%20العالمى%20-%20مهرجانات%202021.mp3" class="audio"></audio>
         </div>
     </div>
 </header>
+
 </body>
+<script src="script.js"></script>
 </html>

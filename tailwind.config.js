@@ -9,23 +9,30 @@ module.exports = {
         'green':'#50A584',
       },
       brightness:{
-        25:'0.35',
+        25:'0.30',
       },
       backdropBlur:{
         md:'6px',
+      },
+      blur:{
+        md:'6px'
       },
       zIndex:{
         1:'-1',
       },
       width:{
-        43:'43%',
+        42:'42%',
         87:'87%',
+        13:'3.15rem',
       },
       colors:{
         'light-green' :'#50A584',
+        'social':'#F1F1F1',
       },
       inset:{
         42:'10.5rem',
+        15:'3.875rem',
+
       },
     },
     },
