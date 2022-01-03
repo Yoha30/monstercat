@@ -13,8 +13,6 @@ playButton.forEach(button => button.addEventListener('click', function (e) {
         start.play();
         const audioContext = new AudioContext();
         const element = document.querySelectorAll('audio');
-     /*   const source = audioContext.createMediaElementSource(element);
-        source.connect(audioContext.destination)*/
 
     }
     songs.addEventListener('click', function () {
